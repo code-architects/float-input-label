@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.inputcontainer {
+    position: relative;
+    width: 300px;
+    line-height: 44px;
+}
+label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #d3d3d3;
+    transition: 0.15s;
+}
+input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 8px;
+    border-bottom: 2px solid #000;
+    box-shadow: none;
+    color: #111;
+}
+input:focus, input:valid {
+    border-color: crimson;
+}
+input:focus ~ label,
+input:valid ~ label {
+    font-size: 14px;
+    top: -24px;
+    color: crimson;
+}
